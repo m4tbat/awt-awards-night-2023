@@ -6,7 +6,7 @@ var wrapperElement = document.getElementById('wrapper')
 var displayed = getCookie("displayed_typeform"); //
 console.log("Displayed is: " + displayed);
 if (displayed){
-  wrapperElement.innerHTML="<h2>Sondaggio già compilato.</h2>"
+  wrapperElement.innerHTML="<h2>Grazie per aver compilato il sondaggio! Ora attendiamo i risultati 🥁🥁🥁</h2>"
 } else if(!displayed) {
   // setCookie("displayed_typeform", true, 365);
   console.log("Showing! " + displayed);
