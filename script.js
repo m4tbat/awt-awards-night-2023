@@ -1,11 +1,11 @@
-var url = "https://picsoung.typeform.com/to/AEUNRk83#utm_source=tf-embed-cookies" // NOTE: Replace with your typeform URL
-var FORM_ID = "AEUNRk83" // NOTE: Replace with your typeform id
+var url = "https://s72z8pg62uk.typeform.com/to/vqtkBH3B" // NOTE: Replace with your typeform URL
+var FORM_ID = "vqtkBH3B" // NOTE: Replace with your typeform id
 
 var wrapperElement = document.getElementById('wrapper')
 
 var displayed = getCookie("displayed_typeform"); //
 if (displayed){
-  wrapperElement.innerHTML="<h2>Typeform already displayed once.</h2>"
+  wrapperElement.innerHTML="<h2>Sondaggio già compilato.</h2>"
 } else if(!displayed && displayed === "") {
   // setCookie("displayed_typeform", true, 365);
   showEmbed();
