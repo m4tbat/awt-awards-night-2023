@@ -6,7 +6,7 @@ var wrapperElement = document.getElementById('wrapper')
 var displayed = getCookie("displayed_typeform"); //
 console.log("Displayed is: " + displayed);
 if (displayed){
-  wrapperElement.innerHTML="<h2>Grazie per aver compilato il sondaggio! Ora attendiamo i risultati 🥁🥁🥁</h2>"
+  wrapperElement.innerHTML="<h2>Grazie per aver compilato il sondaggio!</h2><br><h2>Ora attendiamo i risultati 🥁🥁🥁</h2>"
 } else if(!displayed) {
   // setCookie("displayed_typeform", true, 365);
   console.log("Showing! " + displayed);
@@ -37,7 +37,7 @@ function setCookie(cname, cvalue, exdays) {
     var d = new Date();
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
     var expires = "expires="+ d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    document.cookie = cname + "=" + cvalue + ";SameSite=None;" + expires + ";path=/";
     console.log("Cookie settato: " + cname + "=" + cvalue + ";" + expires + ";path=/");
 }
 
