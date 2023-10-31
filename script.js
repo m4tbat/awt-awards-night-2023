@@ -51,6 +51,7 @@ function getCookie(cname) {
             c = c.substring(1);
         }
         if (c.indexOf(name) == 0) {
+            console.log("Cookie trovato! " + c);
             return c.substring(name.length, c.length);
         }
     }
