@@ -4,11 +4,12 @@ var FORM_ID = "vqtkBH3B" // NOTE: Replace with your typeform id
 var wrapperElement = document.getElementById('wrapper')
 
 var displayed = getCookie("displayed_typeform"); //
+console.log("Displayed is: " + displayed);
 if (displayed){
   wrapperElement.innerHTML="<h2>Sondaggio già compilato.</h2>"
 } else if(!displayed && displayed === "") {
   // setCookie("displayed_typeform", true, 365);
-  console.log("Showing!");
+  console.log("Showing! " + displayed);
   showEmbed();
 } else {
     console.log("Ne uno ne l'altro");
