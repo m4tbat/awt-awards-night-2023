@@ -7,7 +7,7 @@ var displayed = getCookie("displayed_typeform"); //
 console.log("Displayed is: " + displayed);
 if (displayed){
   wrapperElement.innerHTML="<h2>Sondaggio già compilato.</h2>"
-} else if(!displayed && displayed === "") {
+} else if(!displayed) {
   // setCookie("displayed_typeform", true, 365);
   console.log("Showing! " + displayed);
   showEmbed();
@@ -52,8 +52,8 @@ function getCookie(cname) {
         }
         if (c.indexOf(name) == 0) {
             console.log("Cookie trovato! " + c);
-            return c.substring(name.length, c.length);
+            return true;
         }
     }
-    return "";
+    return false;
 }
