@@ -8,7 +8,10 @@ if (displayed){
   wrapperElement.innerHTML="<h2>Sondaggio già compilato.</h2>"
 } else if(!displayed && displayed === "") {
   // setCookie("displayed_typeform", true, 365);
+  console.log("Showing!");
   showEmbed();
+} else {
+    console.log("Ne uno ne l'altro");
 }
 
 function showEmbed(){ // call this function to display the embed typeform
