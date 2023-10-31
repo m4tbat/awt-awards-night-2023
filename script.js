@@ -38,7 +38,7 @@ function setCookie(cname, cvalue, exdays) {
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
     var expires = "expires="+ d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";SameSite=None;" + expires + ";path=/";
-    console.log("Cookie settato: " + cname + "=" + cvalue + ";" + expires + ";path=/");
+    // console.log("Cookie settato: " + cname + "=" + cvalue + ";" + expires + ";path=/");
 }
 
 function getCookie(cname) {
@@ -52,7 +52,7 @@ function getCookie(cname) {
         }
         if (c.indexOf(name) == 0) {
             var result = c.substring(19);
-            console.log("Cookie trovato! " + result);
+            // console.log("Cookie trovato! " + result);
             return result !== undefined && result != null && result != "";
         }
     }
